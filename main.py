@@ -19,7 +19,7 @@ window.resizable(False, False)
 csv_file = ''
 while csv_file == '':
     csv_file = filedialog.askopenfilename(initialdir='/', title='항목/URL이 담긴 csv 파일을 선택하세요.', filetypes=[("csv files", "*.csv")])
-data = pandas.read_csv(csv_file,names=['항목','URL'], encoding='UTF-8')
+data = pandas.read_csv(csv_file, names=['항목', 'URL'], encoding='UTF-8')
 
 # 탭 생성
 tabcontrol = ttk.Notebook(window)
